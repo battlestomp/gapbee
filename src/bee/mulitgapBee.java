@@ -53,6 +53,7 @@ public class mulitgapBee extends Algorithm {
 	}
 	void SendOnlookerBees(){
 		
+		
 	}
 	void SendScoutBees(){
 		
