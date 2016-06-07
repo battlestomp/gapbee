@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/qualityIndicator
+END
+R2.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/qualityIndicator/R2.java
+END
+QualityIndicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/qualityIndicator/QualityIndicator.java
+END
+InvertedGenerationalDistance.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/qualityIndicator/InvertedGenerationalDistance.java
+END
+GeneralizedSpread.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/qualityIndicator/GeneralizedSpread.java
+END
+Epsilon.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/qualityIndicator/Epsilon.java
+END
+GenerationalDistance.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/qualityIndicator/GenerationalDistance.java
+END
+Hypervolume.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/qualityIndicator/Hypervolume.java
+END
+Spread.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/qualityIndicator/Spread.java
+END

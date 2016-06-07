@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/problems/singleObjective
+END
+Griewank.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/problems/singleObjective/Griewank.java
+END
+OneMax.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/problems/singleObjective/OneMax.java
+END
+Sphere.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/problems/singleObjective/Sphere.java
+END
+Rosenbrock.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/problems/singleObjective/Rosenbrock.java
+END
+Rastrigin.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/problems/singleObjective/Rastrigin.java
+END
+TSP.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/problems/singleObjective/TSP.java
+END

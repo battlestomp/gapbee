@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings
+END
+SMPSO_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/SMPSO_Settings.java
+END
+SMSEMOA_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/SMSEMOA_Settings.java
+END
+NSGAIIAdaptive_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/NSGAIIAdaptive_Settings.java
+END
+IBEA_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/IBEA_Settings.java
+END
+pMOEAD_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/pMOEAD_Settings.java
+END
+FastSMSEMOA_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/FastSMSEMOA_Settings.java
+END
+AbYSS_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/AbYSS_Settings.java
+END
+SPEA2_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/SPEA2_Settings.java
+END
+MOEAD_DRA_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/MOEAD_DRA_Settings.java
+END
+OMOPSO_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/OMOPSO_Settings.java
+END
+MOCHC_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/MOCHC_Settings.java
+END
+PAES_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/PAES_Settings.java
+END
+NSGAII_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/NSGAII_Settings.java
+END
+NSGAIIBinary_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/NSGAIIBinary_Settings.java
+END
+SMPSOhv_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/SMPSOhv_Settings.java
+END
+pSMPSO_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/pSMPSO_Settings.java
+END
+NSGAIIRandom_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/NSGAIIRandom_Settings.java
+END
+cMOEAD_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/cMOEAD_Settings.java
+END
+CellDE_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/CellDE_Settings.java
+END
+MOCell_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/MOCell_Settings.java
+END
+MOEAD_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/MOEAD_Settings.java
+END
+dMOPSO_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/dMOPSO_Settings.java
+END
+NSGAIIPermutation_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/NSGAIIPermutation_Settings.java
+END
+GDE3_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/GDE3_Settings.java
+END
+RandomSearch_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/RandomSearch_Settings.java
+END
+pNSGAII_Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/moeajmatel/code/!svn/ver/8/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/experiments/settings/pNSGAII_Settings.java
+END

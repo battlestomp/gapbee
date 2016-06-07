@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/geneticAlgorithm
+END
+GA_main.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/geneticAlgorithm/GA_main.java
+END
+TSPGA_main.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/geneticAlgorithm/TSPGA_main.java
+END
+acGA.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/geneticAlgorithm/acGA.java
+END
+scGA.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/geneticAlgorithm/scGA.java
+END
+ssGA.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/geneticAlgorithm/ssGA.java
+END
+pgGA_main.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/geneticAlgorithm/pgGA_main.java
+END
+gGA.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/geneticAlgorithm/gGA.java
+END
+pgGA.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/geneticAlgorithm/pgGA.java
+END

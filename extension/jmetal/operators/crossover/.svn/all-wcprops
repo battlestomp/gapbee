@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/operators/crossover
+END
+SinglePointCrossover.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/operators/crossover/SinglePointCrossover.java
+END
+SBXCrossover.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/operators/crossover/SBXCrossover.java
+END
+HUXCrossover.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/operators/crossover/HUXCrossover.java
+END
+PMXCrossover.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/operators/crossover/PMXCrossover.java
+END
+CrossoverFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/operators/crossover/CrossoverFactory.java
+END
+TwoPointsCrossover.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/operators/crossover/TwoPointsCrossover.java
+END
+SBXSinglePointCrossover.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/operators/crossover/SBXSinglePointCrossover.java
+END
+BLXAlphaCrossover.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/operators/crossover/BLXAlphaCrossover.java
+END
+Crossover.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/operators/crossover/Crossover.java
+END
+DifferentialEvolutionCrossover.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/operators/crossover/DifferentialEvolutionCrossover.java
+END

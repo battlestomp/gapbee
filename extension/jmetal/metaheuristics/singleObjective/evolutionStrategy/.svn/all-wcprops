@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/evolutionStrategy
+END
+ES_main.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/evolutionStrategy/ES_main.java
+END
+NonElitistES.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/evolutionStrategy/NonElitistES.java
+END
+ElitistES.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/p/moeajmatel/code/!svn/ver/7/%20moeajmatel-code/jmetal/jmetal4.5.src/jmetal/metaheuristics/singleObjective/evolutionStrategy/ElitistES.java
+END
