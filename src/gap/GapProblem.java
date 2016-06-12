@@ -181,68 +181,7 @@ public class GapProblem extends Problem {
 				e.printStackTrace();
 			}
 	}
-	public Boolean checksolution(Solution solution){
-		int[] d = new int[numberOfVariables_];
-		for(int i=0; i<d.length; i++){
-			Int gen=(Int)solution.getDecisionVariables()[i];
-			d[i] = (int)gen.getValue();
-		}
-		int[] AgentCosts = new int[NumofAgents];
-		int[] AgentConsumption = new int[NumofAgents];
-		Arrays.fill(AgentCosts, 0);  
-		Arrays.fill(AgentConsumption, 0);  
-
-		//计算成本和资源消耗
-		for(int i=0; i<NumofJobs; i++){
-			AgentCosts[d[i]] = AgentCosts[d[i]] + ArrayCosts[d[i]][i];
-			AgentConsumption[d[i]] = AgentConsumption[d[i]] + ArrayComsuption[d[i]][i];
-		}
-
-		int[] ObjConstraint = Arrays.copyOf(AgentConsumption, AgentConsumption.length);
-		//计算是否超出约束
-		int Rind = 0;
-		for (int j=0; j<NumofAgents; j++){
-			if (ObjConstraint[j] < ArrayConstraint[j]){
-				ObjConstraint[j] = 0;
-			}else{
-				ObjConstraint[j] = ObjConstraint[j] - ArrayConstraint[j];
-				Rind = Rind + ObjConstraint[j];
-			}
-		}
-
-		int obj0 = 0;
-		int obj1 = 0;
-		int mincomsumption = Integer.MAX_VALUE;
-		int maxconsumption = Integer.MIN_VALUE;
-		for (int j=0; j<NumofAgents; j++){
-			obj0 = obj0 + AgentCosts[j];
-			if (mincomsumption>AgentConsumption[j])
-				mincomsumption = AgentConsumption[j];
-			if (maxconsumption<AgentConsumption[j])
-				maxconsumption = AgentConsumption[j];
-		}	
-		obj1 = maxconsumption - mincomsumption;
-		System.out.print("solution:");
-		for(int k=0; k<d.length; k++){
-			System.out.printf("%2d, ", d[k]);
-		}
-		System.out.println();
-		if (obj0 == (int)solution.getObjective(0) && obj1 == (int)solution.getObjective(1)){
-			return true;
-		}
-		return false;
-	}
-	public void check(SolutionSet population){
-		for (int i=0; i<population.size(); i++) {
-			Solution solution = population.get(i);
-			if (checksolution(solution) == false){
-				System.out.printf("error");
-			}
-			if(solution.getOverallConstraintViolation() == 0.0){
-				checksolution(solution);
-			}
-		}
-	}
+	
 	public double GetProbability(List<Integer> ListAgents, int iagnet, int jtask){
 		double probability = 0;
 		if (ListAgents.size()==0)
@@ -321,51 +260,6 @@ public class GapProblem extends Problem {
 		for(int i=0; i<d.length; i++){
 			solution.getDecisionVariables()[i].setValue(d[i]);
 		}
-
-		//Heuristic strategy = new Heuristic();
-		//strategy.resultrepair(d, this);
-
-		int[] AgentCosts = new int[NumofAgents];
-		int[] AgentConsumption = new int[NumofAgents];
-		Arrays.fill(AgentCosts, 0);  
-		Arrays.fill(AgentConsumption, 0);  
-
-		//计算成本和资源消耗
-		for(int i=0; i<NumofJobs; i++){
-			AgentCosts[d[i]] = AgentCosts[d[i]] + ArrayCosts[d[i]][i];
-			AgentConsumption[d[i]] = AgentConsumption[d[i]] + ArrayComsuption[d[i]][i];
-		}
-
-		int[] ObjConstraint = Arrays.copyOf(AgentConsumption, AgentConsumption.length);
-		//计算是否超出约束
-		int Rind = 0;
-		for (int j=0; j<NumofAgents; j++){
-			if (ObjConstraint[j] < ArrayConstraint[j]){
-				ObjConstraint[j] = 0;
-			}else{
-				ObjConstraint[j] = ObjConstraint[j] - ArrayConstraint[j];
-				Rind = Rind + ObjConstraint[j];
-			}
-		}
-
-		int obj0 = 0;
-		int obj1 = 0;
-		int mincomsumption = Integer.MAX_VALUE;
-		int maxconsumption = Integer.MIN_VALUE;
-		for (int j=0; j<NumofAgents; j++){
-			obj0 = obj0 + AgentCosts[j];
-			if (mincomsumption>AgentConsumption[j])
-				mincomsumption = AgentConsumption[j];
-			if (maxconsumption<AgentConsumption[j])
-				maxconsumption = AgentConsumption[j];
-		}	
-		obj1 = maxconsumption - mincomsumption;
-		solution.setObjective(0, obj0);
-		solution.setObjective(1, obj1);	
-
-		solution.setOverallConstraintViolation(Rind);
-
-
 	}
 
 	// evaluation of the problem
@@ -400,175 +294,17 @@ public class GapProblem extends Problem {
 		int obj0 = 0;
 		int obj1 = 0;
 		int  obj2 = 0;
-		int mincomsumption = Integer.MAX_VALUE;
-		int maxconsumption = Integer.MIN_VALUE;
-		int avgconsumption = 0;
 		for (int j=0; j<NumofAgents; j++){
 			obj0 = obj0 + AgentCosts[j];
-			avgconsumption = avgconsumption + AgentConsumption[j];
-			if (mincomsumption>AgentConsumption[j])
-				mincomsumption = AgentConsumption[j];
-			if (maxconsumption<AgentConsumption[j])
-				maxconsumption = AgentConsumption[j];
+			obj1 = obj1 + AgentConsumption[j];
 		}	
-		avgconsumption = avgconsumption/NumofAgents;
-		for (int j=0; j<NumofAgents; j++){
-			obj2 = obj2 + Math.abs(AgentConsumption[j] - avgconsumption);
-		}
-		obj1 = maxconsumption - mincomsumption;
 		solution.setObjective(0, obj0);
-		solution.setObjective(1, obj2);	
+		solution.setObjective(1, obj1);	
 		solution.setOverallConstraintViolation(Rind);
 	}
-	public double feasible(int[] result){
-		int[] d = result;
-		int[] AgentCosts = new int[NumofAgents];
-		int[] AgentConsumption = new int[NumofAgents];
-		Arrays.fill(AgentCosts, 0);  
-		Arrays.fill(AgentConsumption, 0);  
 
-		//计算成本和资源消耗
-		for(int i=0; i<NumofJobs; i++){
-			AgentCosts[d[i]] = AgentCosts[d[i]] + ArrayCosts[d[i]][i];
-			AgentConsumption[d[i]] = AgentConsumption[d[i]] + ArrayComsuption[d[i]][i];
-		}
-
-		int[] ObjConstraint = Arrays.copyOf(AgentConsumption, AgentConsumption.length);
-		//计算是否超出约束
-		int Rind = 0;
-		for (int j=0; j<NumofAgents; j++){
-			if (ObjConstraint[j] < ArrayConstraint[j]){
-				ObjConstraint[j] = 0;
-			}else{
-				ObjConstraint[j] = ObjConstraint[j] - ArrayConstraint[j];
-				Rind = Rind + ObjConstraint[j];
-			}
-		}
-
-		int obj0 = 0;
-		int obj1 = 0;
-		int  obj2 = 0;
-		int mincomsumption = Integer.MAX_VALUE;
-		int maxconsumption = Integer.MIN_VALUE;
-		int avgconsumption = 0;
-		for (int j=0; j<NumofAgents; j++){
-			obj0 = obj0 + AgentCosts[j];
-			avgconsumption = avgconsumption + AgentConsumption[j];
-			if (mincomsumption>AgentConsumption[j])
-				mincomsumption = AgentConsumption[j];
-			if (maxconsumption<AgentConsumption[j])
-				maxconsumption = AgentConsumption[j];
-		}	
-		obj1 = maxconsumption - mincomsumption;
-
-		avgconsumption = avgconsumption/NumofAgents;
-		
-		for (int j=0; j<NumofAgents; j++){
-			obj2 = obj2 + Math.abs(AgentConsumption[j] - avgconsumption);
-		}
-		
-		if (Rind>0)
-			return -1;
-		return obj2;
-	}
-	public double relaxfitness(int[] result){
-		int[] d = result;
-		int[] AgentCosts = new int[NumofAgents];
-		int[] AgentConsumption = new int[NumofAgents];
-		Arrays.fill(AgentCosts, 0);  
-		Arrays.fill(AgentConsumption, 0);  
-
-		//计算成本和资源消耗
-		for(int i=0; i<NumofJobs; i++){
-			AgentCosts[d[i]] = AgentCosts[d[i]] + ArrayCosts[d[i]][i];
-			AgentConsumption[d[i]] = AgentConsumption[d[i]] + ArrayComsuption[d[i]][i];
-		}
-
-		int[] ObjConstraint = Arrays.copyOf(AgentConsumption, AgentConsumption.length);
-		//计算是否超出约束
-		int Rind = 0;
-		for (int j=0; j<NumofAgents; j++){
-			if (ObjConstraint[j] < ArrayConstraint[j]){
-				ObjConstraint[j] = 0;
-			}else{
-				ObjConstraint[j] = ObjConstraint[j] - ArrayConstraint[j];
-				Rind = Rind + ObjConstraint[j];
-			}
-		}
-
-		int obj0 = 0;
-		int obj1 = 0;
-		int  obj2 = 0;
-		int mincomsumption = Integer.MAX_VALUE;
-		int maxconsumption = Integer.MIN_VALUE;
-		int avgconsumption = 0;
-		for (int j=0; j<NumofAgents; j++){
-			obj0 = obj0 + AgentCosts[j];
-			avgconsumption = avgconsumption + AgentConsumption[j];
-			if (mincomsumption>AgentConsumption[j])
-				mincomsumption = AgentConsumption[j];
-			if (maxconsumption<AgentConsumption[j])
-				maxconsumption = AgentConsumption[j];
-		}	
-		obj1 = maxconsumption - mincomsumption;
-
-		avgconsumption = avgconsumption/NumofAgents;
-		
-		for (int j=0; j<NumofAgents; j++){
-			obj2 = obj2 + Math.abs(AgentConsumption[j] - avgconsumption);
-		}
-		//return obj0;
-		//return obj2 + 50*Rind;
-		if (sbulambda==null)
-			return obj0 + 50*Rind;
-		return obj0*sbulambda[0] + obj1*sbulambda[1] + 50*Rind;
-	}
-
-	public double fitness2(int[] result, double[] lambda){
-		int[] d = result;
-		int[] AgentCosts = new int[NumofAgents];
-		int[] AgentConsumption = new int[NumofAgents];
-		Arrays.fill(AgentCosts, 0);  
-		Arrays.fill(AgentConsumption, 0);  
-
-		//计算成本和资源消耗
-		for(int i=0; i<NumofJobs; i++){
-			AgentCosts[d[i]] = AgentCosts[d[i]] + ArrayCosts[d[i]][i];
-			AgentConsumption[d[i]] = AgentConsumption[d[i]] + ArrayComsuption[d[i]][i];
-		}
-
-		int[] ObjConstraint = Arrays.copyOf(AgentConsumption, AgentConsumption.length);
-		//计算是否超出约束
-		int Rind = 0;
-		for (int j=0; j<NumofAgents; j++){
-			if (ObjConstraint[j] < ArrayConstraint[j]){
-				ObjConstraint[j] = 0;
-			}else{
-				ObjConstraint[j] = ObjConstraint[j] - ArrayConstraint[j];
-				Rind = Rind + ObjConstraint[j];
-			}
-		}
-
-		int obj0 = 0;
-		int obj1 = 0;
-		int mincomsumption = Integer.MAX_VALUE;
-		int maxconsumption = Integer.MIN_VALUE;
-		for (int j=0; j<NumofAgents; j++){
-			obj0 = obj0 + AgentCosts[j];
-			if (mincomsumption>AgentConsumption[j])
-				mincomsumption = AgentConsumption[j];
-			if (maxconsumption<AgentConsumption[j])
-				maxconsumption = AgentConsumption[j];
-		}	
-		obj1 = maxconsumption - mincomsumption;
-		if (Rind>0)
-			return -1;
-		return obj0*lambda[0] + obj1*lambda[1];
-	}
 
 	public void showsolution(Solution solution){
-		//checksolution(solution);
-		//checkgreedy(solution);
 		System.out.print("\nsolution: ");
 		int[] d = new int[numberOfVariables_];
 		for(int i=0; i<d.length; i++){
@@ -653,8 +389,4 @@ public class GapProblem extends Problem {
 		System.out.println("----------------------------------------totalconsume=" + totalconsume);
 	}
 	
-	
-	public void showsample(int[] result){
-		System.out.print("\nsolution: "+feasible(result) );
-	}
 } 

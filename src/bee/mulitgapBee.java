@@ -1,11 +1,18 @@
 package bee;
 
+import java.util.HashMap;
+
 import jmetal.core.Algorithm;
+import jmetal.core.Operator;
 import jmetal.core.Problem;
 import jmetal.core.Solution;
 import jmetal.core.SolutionSet;
+import jmetal.operators.crossover.CrossoverFactory;
 import jmetal.util.JMException;
-
+import jmetal.util.PseudoRandom;
+import operator.GAPMutation;
+import operator.UniformCrossover;
+import gap.GapProblem;
 
 class Source{
 	int NumFoodSources;
@@ -57,6 +64,33 @@ public class mulitgapBee extends Algorithm {
 	}
 	void SendScoutBees(){
 		
+	}
+	void Update(int pos){
+		int pos1 = pos;
+		int pos2 = PseudoRandom.randInt(0,Food.Sources.size()-1);
+	    while ((pos1 == pos2) && (Food.Sources.size()>1)) {
+	        pos2 = PseudoRandom.randInt(0,Food.Sources.size()-1);
+	        }
+	    Solution cur = new Solution(Food.Sources.get(pos1));
+	    Solution next = new Solution(Food.Sources.get(pos2));
+	}
+	Solution UpdateSolution(Solution cur, Solution next){
+		Operator crossover; // Crossover operator
+		Operator mutation; // Mutation operator
+		HashMap parameters; // Operator parameters
+		
+		Solution newsolution = new Solution(cur);
+		parameters = new HashMap();
+		parameters.put("probability", 1.00);
+		parameters.put("distributionIndex", 20.0);
+		crossover = new UniformCrossover(parameters);
+
+		parameters = new HashMap();
+	    parameters.put("probability", 0.03) ;
+	    parameters.put("distributionIndex", 20.0) ;     
+	    mutation = new GAPMutation(parameters, (GapProblem)problem_);
+	    
+		return newsolution; 
 	}
 	@Override
 	public SolutionSet execute() throws JMException, ClassNotFoundException {
