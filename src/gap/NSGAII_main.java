@@ -63,7 +63,7 @@ import operator.UniformCrossover;
 public class NSGAII_main {
 	public static Logger logger_; // Logger object
 	public static FileHandler fileHandler_; // FileHandler object
-	List<GapProblem> ListOfProblems = new ArrayList<GapProblem>();
+	public List<GapProblem> ListOfProblems = new ArrayList<GapProblem>();
 	int NumofProblem = 0;
 
 	/**
@@ -197,7 +197,7 @@ public class NSGAII_main {
 		long estimatedTime = System.currentTimeMillis() - initTime;
 		System.out.printf("Total execution time: " + estimatedTime + "ms;" + "populationszie:" + population.size()+"\n");
 		population.printVariablesToFile("./output/VAR");
-		population.printFeasibleFUN("./output/FUN_NSGAII_a1");
+		population.printFeasibleFUN("./output/nsga");
 		
 		double tempmax = Double.MAX_VALUE;
 		int tag=0;

@@ -186,7 +186,7 @@ public class MOEAD_main {
 //		population.printFeasibleFUN("FUN");
 //		logger_.info("Variables values have been writen to file VAR");
 //		population.printFeasibleVAR("VAR");      
-		population.printFeasibleFUN("output/moead_a5");
+		population.printFeasibleFUN("output/moead");
 		GapProblem GapProblem = (GapProblem)problem;
 		
 //		for(int i=0; i<population.size(); i++){
