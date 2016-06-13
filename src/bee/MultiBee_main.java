@@ -31,7 +31,7 @@ public class MultiBee_main {
 		problem = new GapProblem("IntSolutionType",TestData.ListOfProblems.get(1));
 		algorithm = new mulitgapBee(problem);
 		algorithm.setInputParameter("numberfoods",100);
-		algorithm.setInputParameter("numberlimit", 50);
+		algorithm.setInputParameter("numberlimit", 100);
 		algorithm.setInputParameter("iterations", 1000000);
 		long initTime = System.currentTimeMillis();
 		SolutionSet population = algorithm.execute();

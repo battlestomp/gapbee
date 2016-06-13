@@ -133,12 +133,12 @@ public class mulitgapBee extends Algorithm {
 			return;
 		}
 		
-//		SolutionOperator crossoveroperator = BeeCrossover(cur, next);
-//		if (crossoveroperator.flag == 1){
-//			Food.Sources.replace(pos1, mutationoperator.cur);
-//			Food.LimitSources[pos1] = 0;
-//			return;
-//		}
+		SolutionOperator crossoveroperator = BeeCrossover(cur, next);
+		if (crossoveroperator.flag == 1){
+			Food.Sources.replace(pos1, crossoveroperator.cur);
+			Food.LimitSources[pos1] = 0;
+			return;
+		}
 		Food.LimitSources[pos1] = Food.LimitSources[pos1] + 1;
 	}
 
