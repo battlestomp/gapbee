@@ -406,7 +406,7 @@ public class MOEAD extends Algorithm {
           maxFun = feval;
         }
       } // for
-      fitness = maxFun + 2*individual.getOverallConstraintViolation();
+      fitness = maxFun + 50*individual.getOverallConstraintViolation();
     } // if
     else {
       System.out.println("MOEAD.fitnessFunction: unknown type " + functionType_);

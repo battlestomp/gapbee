@@ -24,7 +24,7 @@ class Source{
 	double[]  SourcesProbability;
 	int[] SourcesDominations;   		//支配其它解数量
 	int[] SourcesDominationeds; 	//被其它解支配解数量
-	int MaxDominated = 10;
+	int MaxDominated = 15;
 	Source(int nfoods, int mlimit){
 		 NumFoodSources = nfoods;
 		 MaxLimit = mlimit;

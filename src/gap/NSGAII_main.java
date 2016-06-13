@@ -199,18 +199,7 @@ public class NSGAII_main {
 		population.printVariablesToFile("./output/VAR");
 		population.printFeasibleFUN("./output/nsga");
 		
-		double tempmax = Double.MAX_VALUE;
-		int tag=0;
-		for(int i=0; i<population.size(); i++){
-			Solution solution = population.get(i);
-			if (solution.getOverallConstraintViolation()==0){
-				if (solution.getObjective(0)<tempmax){
-					tempmax = solution.getObjective(0);
-					tag = i;
-				}	
-			}
-		}
-		System.out.println("min_ojbect1:"+tempmax+"tag:"+tag);
+		
 		
 		
 	} // if
