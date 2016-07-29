@@ -45,19 +45,21 @@ public class MultiBee_main {
 		QualityIndicator indicators; // Object to get quality indicators
 
 		NSGAII_main TestData = new NSGAII_main();
-		String fileName = "./Data/gapa.txt";
+		String fileName = "./Data/gap1.txt";
 		TestData.readFile(fileName);
-		problem = new GapProblem("IntSolutionType",TestData.ListOfProblems.get(1));
+		problem = new GapProblem("IntSolutionType",TestData.ListOfProblems.get(0));
 		algorithm = new mulitgapBee(problem);
 		algorithm.setInputParameter("numberfoods",100);
-		algorithm.setInputParameter("numberlimit", 50);
-		algorithm.setInputParameter("iterations", 1000000);
+		algorithm.setInputParameter("numberlimit", 20);
+		algorithm.setInputParameter("iterations", 1500000);
 		long initTime = System.currentTimeMillis();
 		SolutionSet population = algorithm.execute();
 		long estimatedTime = System.currentTimeMillis() - initTime;
 		System.out.printf("Total execution time: " + estimatedTime + "ms;" + "populationszie:" + population.size()+"\n");
-		
-		getpf(population).printFeasibleFUN("./output/bee");
+		SolutionSet result =getpf(population); 
+		result.printFeasibleFUN("./output/bee");
+		System.out.print("agent"+problem.GetNumofAgents() + "job" + problem.GetNumofJobs());
+		//result.printFeasibleVAR("./output/result");
 	}
 
 }

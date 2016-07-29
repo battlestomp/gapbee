@@ -60,8 +60,12 @@ public class mulitgapBee extends Algorithm {
 		Solution newSolution;
 		for (int i = 0; i < nfoods; i++) {
 			newSolution = new Solution(problem_);
+			int[] d = GAP.Grasp();
+			for(int j=0; j<d.length; j++){
+				newSolution.getDecisionVariables()[j].setValue(d[j]);
+			}
 			problem_.evaluate(newSolution);
-			problem_.evaluateConstraints(newSolution);
+			//problem_.evaluateConstraints(newSolution);
 			Food.Sources.add(newSolution);
 		}
 	}

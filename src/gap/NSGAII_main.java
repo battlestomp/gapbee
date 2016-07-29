@@ -47,7 +47,6 @@ import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 
 import gap.GapProblem;
-
 import operator.GAPMutation;
 import operator.UniformCrossover;
 
@@ -154,9 +153,9 @@ public class NSGAII_main {
 		QualityIndicator indicators; // Object to get quality indicators
 
 		NSGAII_main TestData = new NSGAII_main();
-		String fileName = "./Data/gapa.txt";
+		String fileName = "./Data/gap1.txt";
 		TestData.readFile(fileName);
-		problem = new GapProblem("IntSolutionType",TestData.ListOfProblems.get(1));
+		problem = new GapProblem("IntSolutionType",TestData.ListOfProblems.get(0));
 		algorithm = new NSGAII(problem);
 		// algorithm = new ssNSGAII(problem);
 
@@ -196,8 +195,9 @@ public class NSGAII_main {
 		SolutionSet population = algorithm.execute();
 		long estimatedTime = System.currentTimeMillis() - initTime;
 		System.out.printf("Total execution time: " + estimatedTime + "ms;" + "populationszie:" + population.size()+"\n");
-		population.printVariablesToFile("./output/VAR");
-		population.printFeasibleFUN("./output/nsga");
+		population.printFeasibleVAR("./output/111resultVAR");
+		population.printFeasibleFUN("./output/111nsga5.15");
+		System.out.print("agent"+problem.GetNumofAgents() + "job" + problem.GetNumofJobs());
 		
 		
 		
